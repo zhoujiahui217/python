@@ -1,0 +1,40 @@
+1500605173778	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64.dll v=0.0.0.0
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64.dll v=0.0.0.0
+1500605175516	Marionette	INFO	Listening on port 50532
+[GPU 8728] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1500605175786	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500605175825	Marionette	DEBUG	loaded listener.js
+1500605175851	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1500605175956	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1500605175956	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1500605176397	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://yfzx.cqwisest.com:9135/login.html"
+1500605176573	Marionette	DEBUG	Received DOM event "pageshow" for "http://yfzx.cqwisest.com:9135/login.html"
+[Child 2704] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+1500605186597	Marionette	INFO	Ceased listening
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ojw6&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=%25EF%25BF%25BD%25C7%25BB%25EF%25BF%25BD%25CB%25BC%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25CA%25B4%25EF%25BF%25BD%25CF%25B5%25CD%25B3"
+1500275497031	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://qiyukf.com/sdk/res/delegate.html?1500275496848"
+1500275497033	Marionette	DEBUG	Received DOM event "pageshow" for "https://qiyukf.com/sdk/res/delegate.html?1500275496848"
+1500275497037	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://qiyukf.com/client?k=bbfedac00ac2a56ebb0618101309a43f&u=svvsflztctl7m2v9ojw6&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=%25EF%25BF%25BD%25C7%25BB%25EF%25BF%25BD%25CB%25BC%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25CA%25B4%25EF%25BF%25BD%25CF%25B5%25CD%25B3"
+1500275497059	Marionette	DEBUG	Received DOM event "pageshow" for "https://qiyukf.com/client?k=bbfedac00ac2a56ebb0618101309a43f&u=svvsflztctl7m2v9ojw6&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=%25EF%25BF%25BD%25C7%25BB%25EF%25BF%25BD%25CB%25BC%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25CA%25B4%25EF%25BF%25BD%25CF%25B5%25CD%25B3"
+1500275497072	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://qiyukf.com/client?k=bbfedac00ac2a56ebb0618101309a43f&u=svvsflztctl7m2v9ojw6&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=%25EF%25BF%25BD%25C7%25BB%25EF%25BF%25BD%25CB%25BC%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25CA%25B4%25EF%25BF%25BD%25CF%25B5%25CD%25B3"
+1500275497932	Marionette	DEBUG	Received DOM event "pageshow" for "https://qiyukf.com/client?k=bbfedac00ac2a56ebb0618101309a43f&u=svvsflztctl7m2v9ojw6&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=%25EF%25BF%25BD%25C7%25BB%25EF%25BF%25BD%25CB%25BC%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25CA%25B4%25EF%25BF%25BD%25CF%25B5%25CD%25B3"
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+[GPU 4596] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+1500276711041	Marionette	INFO	Ceased listening
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+re/modules/osfile/osfile_async_front.jsm, line 396: Error: OS.File has been shut down. Rejecting post to stat
