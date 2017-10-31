@@ -66,7 +66,7 @@ class Rate():
             #     es = int(row_data[9])
 
             # no_answer
-            if rs != 'pass' and error == 'no answer':
+            if rs != 'pass' and error == 'unknown':
                 self.no_answer += 1
 
             # only one answer results
@@ -78,7 +78,7 @@ class Rate():
             # answer's number !=1
             elif group != '1':
 
-                if rs != 'pass' and error != 0 and rs != '' and error != 'no answer' and error != 'no answer ':
+                if rs != 'pass' and error != 0 and rs != '' and error != 'unknown':
                     self.error += 1
                     print i
                 if rs == 'pass':
@@ -122,6 +122,5 @@ class Rate():
         self.write_excel(num + 1, 4, 'right:' + str(self.total), self.g1_p, self.g1_e, top1, top2, top3, error,
                          self.no_answer, r, url)
 
-
 # r = Rate()
-# r.rate(r'../report/test_169_do_170727_1.xls', 'ga.do_score', 'zhengli')
+# r.rate(r'../report/yiliao_new_test0926.xls', 'ga.do_score', 'zhengli')

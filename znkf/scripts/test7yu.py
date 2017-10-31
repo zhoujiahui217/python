@@ -32,7 +32,7 @@ class compare():
             self.answer_list.append(data)
         self.answer_list = list(set(self.answer_list))
 
-        print self.answer_list
+        # print self.answer_list
 
     def read_excel(self, sheet_name):
 
@@ -61,7 +61,7 @@ class compare():
             "https://qiyukf.com/client?k=bbfedac00ac2a56ebb0618101309a43f&u=svvsflztctl7m2v9ojw6&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=%25EF%25BF%25BD%25C7%25BB%25EF%25BF%25BD%25CB%25BC%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25CA%25B4%25EF%25BF%25BD%25CF%25B5%25CD%25B3")
 
         time.sleep(2)
-        for i in range(0, times):
+        for i in range(3902, times):
 
             frame = self.browser.find_element_by_xpath(".//*[@src='about:blank']")
 
@@ -70,17 +70,18 @@ class compare():
             self.num = i  # 插入excel行数
             logging.debug(i)
             row_data = self.sheet.row_values(i)
-            print row_data[0]
+            print 'questuon__' + row_data[0]
             logging.debug(row_data[0])
             self.real_answer = row_data[2]  # excel中问题的准确答案
 
             self.real_qustion = row_data[1]  # excel中问题的相似答案
             self.like_answer = row_data[0]
-
-            time.sleep(0.5)
+            is_visible('/html/body')
+            # time.sleep(0.5)
             self.browser.find_element_by_xpath('/html/body').send_keys(self.like_answer)
 
             self.browser.switch_to.default_content()
+            time.sleep(2)
             element = self.browser.find_element_by_xpath(".//*[@type='submit']")
             self.browser.execute_script('arguments[0].click();', element)
 
@@ -90,7 +91,7 @@ class compare():
 
             try:
 
-                time.sleep(1.5)
+                time.sleep(2)
 
                 self.leng = self.browser.find_element_by_xpath(
                     ".//*[@class='msg msg_left f-cb'][last()]/div/div/ul").text.split('\n')
@@ -115,6 +116,7 @@ class compare():
                     logging.info(n)
                     logging.info(self.robotanswer)
                     logging.info(self.real_qustion)
+                    print 'stop1'
                     if self.robotanswer.replace("\n", "") == self.real_qustion.replace("\n", ""):
                         res = 'ok'
                         print res
@@ -144,11 +146,12 @@ class compare():
                     logging.info(self.real_answer)
                     print self.answer
                     print self.real_answer
-
+                    print 'stop2'
                     if self.answer == self.real_answer:
                         res = 'ok'
                         print res
                         self.writeexcel(str(usetime), 1, 1, res, file)
+
                     else:
                         for l in range(len(self.answer_list)):
                             if self.answer == self.answer_list[l]:
@@ -159,9 +162,10 @@ class compare():
                                 self.writeexcel(str(usetime), 1, 1, res, file)
                                 break
                             else:
-                                res = 'Fail'
+                                continue
+                                #res = 'Fail'
                                 # print res
-                                self.writeexcel(str(usetime), 1, 1, res, file)
+                                #self.writeexcel(str(usetime), 1, 1, res, file)
                                 # self.browser.quit()
                 except:
                     self.writeexcel(0, 0, 0, 'no answer', file)
@@ -178,6 +182,6 @@ class compare():
 
 if __name__ == '__main__':
     logging.config.fileConfig(r'../config/logging.config')
-    com = compare(r'../data/guanwang2.xls')
+    com = compare(r'../data/yiliao.xlsx')
 
-    com.openfile(310, r'../report/7yu_test_25.xls')
+    com.openfile(4500, r'../report/7yu_test_0928.xls')

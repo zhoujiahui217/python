@@ -1,0 +1,46 @@
+import xlrd
+import xlwt
+
+
+class DataTest:
+    def test(self):
+        book1 = xlrd.open_workbook('../report/all_3.xls')  # cc's answer
+        self.sheet1 = book1.sheet_by_name("Sheet1")
+
+        book2=xlrd.open_workbook('../data/guanwang0807.xlsx')  # test's answer
+        self.sheet2 = book2.sheet_by_name("zhengli")
+
+        len1 = self.sheet1.nrows
+        len2 = self.sheet2.nrows
+
+        wb = xlwt.Workbook()
+        ws = wb.add_sheet('qas')
+
+        for i in range(0, len2):
+            row2 = self.sheet2.row_values(i)
+            question2 = row2[1]
+            l_question2 = row2[0]
+            answer2 = row2[2]
+            print question2
+
+            for n in range(0, len1):
+                row1 = self.sheet1.row_values(n)
+                question1 = row1[0]
+                l_question1 = row1[1]
+                answer1 = row1[4]
+
+                if question2 == question1:
+                    ws.write(i, 0, l_question2)
+                    ws.write(i, 1, question2)
+                    ws.write(i, 2, answer1)
+                else:
+                   continue
+
+
+            #ws.write(i, 0, question2)
+
+        wb.save('../report/test_data2.xls')
+
+
+d = DataTest()
+d.test()
